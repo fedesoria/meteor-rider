@@ -1,0 +1,21 @@
+{
+  "name": "MeteorRiderNpm",
+  "version": "0.0.1",
+  "description": "Bootstrap the necessary code to run Meteor Apps in Cordova",
+  "main": "/lib/meteor-rider-init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "meteor",
+    "rider",
+    "meteorrider",
+    "cordova",
+    "phonegap"
+  ],
+  "author": "Daniel Ochoa",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "~0.9.1"
+  }
+}
