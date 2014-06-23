@@ -1,8 +1,12 @@
 {
   "name": "meteor-rider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bootstrap the necessary code to run Meteor Apps in Cordova",
   "main": "lib/meteor-rider",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poetic/meteor-rider"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
