@@ -11,7 +11,7 @@ Pre-requisites
 ==============
 
 You need to have a Cordova project created with the
-[cordova-cli](https://github.com/apache/cordova-cli) utiliy.
+[cordova-cli](https://github.com/apache/cordova-cli) utility.
 
 Usage
 =====
@@ -22,8 +22,4 @@ Usage
 - You will be asked for the url of the Meteor App. Make sure to enter it without
   the trailing slash.
 
-You can test it by running `cordova platform add ios` then `cordova build ios`,
-open the xcode project under `platforms/ios` and run it. It should now display a
-generic html page before loading the Meteor app.
-
-
+You now have a Cordova App that runs a live Meteor App. Enjoy!
