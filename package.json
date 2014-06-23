@@ -1,5 +1,5 @@
 {
-  "name": "MeteorRiderNpm",
+  "name": "MeteorRider",
   "version": "0.0.1",
   "description": "Bootstrap the necessary code to run Meteor Apps in Cordova",
   "main": "lib/meteor-rider",
@@ -21,6 +21,6 @@
   },
   "preferGlobal": true,
   "bin": {
-    "MeteorRider": "./index.js"
+    "meteorRider": "./index.js"
   }
 }
