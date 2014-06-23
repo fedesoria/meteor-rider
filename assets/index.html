@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html manifest="/app.manifest">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>###TITLE###</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Meteor Cordova Boilerplate, Loading</h1>
-            Loading....
-            <div id="phonegapapp-test" style="display: none;">
-              <!-- put whatever native device testing you want here, easy to toggle in phonegapapp.js -->
-            </div>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<title>Meteor Cordova Boilerplate</title>
+</head>
 
-        </div>
-        <!-- include the core cordova JS file for your app, like normal -->
-        <script type="text/javascript" src="cordova.js"></script>
+<body>
+<div class="app">
+  <h1>Meteor Cordova Boilerplate, Loading</h1>
+  Loading....
+  <div id="phonegapapp-test" style="display: none;">
+    <!-- put whatever native device testing you want here, easy to toggle in phonegapapp.js -->
+  </div>
 
-        <!-- jquery or zepto libraries, as a MeteorRider dependancy -->
-        <script type="text/javascript" src="js/zepto.min.js"></script>
+</div>
+<!-- include the core cordova JS file for your app, like normal -->
+<script type="text/javascript" src="cordova.js"></script>
 
-        <!-- basics for our phonegapapp (Native, on Device JS) -->
-        <script type="text/javascript" src="js/phonegapapp.js"></script>
+<!-- jquery or zepto libraries, as a MeteorRider dependancy -->
+<script type="text/javascript" src="js/zepto.min.js"></script>
 
-        <!-- Meteor Rider -->
-        <script type="text/javascript" src="js/meteor-rider.js"></script>
+<!-- basics for our phonegapapp (Native, on Device JS) -->
+<script type="text/javascript" src="js/phonegapapp.js"></script>
 
-        <script type="text/javascript">
-          // use this to track what version your user's are running
-          var __MeteorRiderConfig__ = {
-            // Your production meteor app
-            meteorUrl: ###METEOR_URL###,
+<!-- Meteor Rider -->
+<script type="text/javascript" src="js/meteor-rider.js"></script>
 
-            // Your local dev meteor server url
-            //meteorUrl:  "http://192.168.1.XX:3000",
+<script type="text/javascript">
+  // use this to track what version your user's are running
+  var __MeteorRiderConfig__ = {
+    // Your production meteor app
+    meteorUrl: '###METEOR_URL###',
 
-            // track Cordova version, bump this after a `cordova update <platform>`
-            phonegapVersion: ###CORDOVA_VERSION###,
+    // Your local dev meteor server url
+    //meteorUrl:  "http://192.168.1.XX:3000",
 
-            // make sure to bump this along with /www/config.xml version and build
-            // to update xcodes version number. AppStore also requires >= 1.0 on submission
-            phonegapAppVersion: 1.0
-          };
+    // track Cordova version, bump this after a `cordova update <platform>`
+    // phonegapVersion: 3.5,
+    cordovaVersion: ###CORDOVA_VERSION###,
 
-          // Start up the phonegap
-          phonegapapp.initialize();
-        </script>
-    </body>
+    // make sure to bump this along with /www/config.xml version and build
+    // to update xcodes version number. AppStore also requires >= 1.0 on submission
+    //phonegapAppVersion: 1.0
+    cordovaAppVersion: '###CORDOVA_APP_VERSION###'
+  };
+
+  // Start up the phonegap
+  phonegapapp.initialize();
+</script>
+</body>
 </html>
 
