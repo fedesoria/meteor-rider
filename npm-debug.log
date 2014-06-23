@@ -1,0 +1,143 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.25/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.3.24
+3 info using node@v0.10.25
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/Daniel/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+12 verbose folder .
+13 info prepublish meteor-rider@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/Daniel/.npm/1f1177db-tar.lock
+16 silly lockFile 85399cfa-88201-0-4455103606451303-tmp-tgz tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+17 verbose lock tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz /Users/Daniel/.npm/85399cfa-88201-0-4455103606451303-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 85399cfa-88201-0-4455103606451303-tmp-tgz tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+21 silly lockFile 85399cfa-88201-0-4455103606451303-tmp-tgz tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+22 verbose tar unpack /var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+23 silly lockFile c64fa486-88201-0-4455103606451303-package tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package
+24 verbose lock tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package /Users/Daniel/.npm/c64fa486-88201-0-4455103606451303-package.lock
+25 silly lockFile 85399cfa-88201-0-4455103606451303-tmp-tgz tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+26 verbose lock tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz /Users/Daniel/.npm/85399cfa-88201-0-4455103606451303-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry LICENSE
+32 silly gunzTarPerm extractEntry index.js
+33 silly gunzTarPerm extractEntry assets/index.html
+34 silly gunzTarPerm extractEntry assets/js/meteor-rider.js
+35 silly gunzTarPerm extractEntry assets/js/phonegapapp.js
+36 silly gunzTarPerm extractEntry assets/js/zepto.min.js
+37 silly gunzTarPerm extractEntry bin/utils.js
+38 silly lockFile c64fa486-88201-0-4455103606451303-package tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package
+39 silly lockFile c64fa486-88201-0-4455103606451303-package tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package
+40 silly lockFile 85399cfa-88201-0-4455103606451303-tmp-tgz tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+41 silly lockFile 85399cfa-88201-0-4455103606451303-tmp-tgz tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/tmp.tgz
+42 verbose tar pack [ '/Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz',
+42 verbose tar pack   '/var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package' ]
+43 verbose tarball /Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+44 verbose folder /var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package
+45 silly lockFile c64fa486-88201-0-4455103606451303-package tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package
+46 verbose lock tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package /Users/Daniel/.npm/c64fa486-88201-0-4455103606451303-package.lock
+47 silly lockFile a92a0b7a-m-meteor-rider-0-0-1-package-tgz tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+48 verbose lock tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz /Users/Daniel/.npm/a92a0b7a-m-meteor-rider-0-0-1-package-tgz.lock
+49 silly lockFile c64fa486-88201-0-4455103606451303-package tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package
+50 silly lockFile c64fa486-88201-0-4455103606451303-package tar:///var/folders/rl/ltg_6vsj71dfk25w6vr7x_840000gn/T/npm-70054-r4418Nhb/1403486588201-0.4455103606451303/package
+51 silly lockFile a92a0b7a-m-meteor-rider-0-0-1-package-tgz tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+52 silly lockFile a92a0b7a-m-meteor-rider-0-0-1-package-tgz tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+53 silly lockFile 6a9b1a80-l-npm-meteor-rider-0-0-1-package /Users/Daniel/.npm/meteor-rider/0.0.1/package
+54 verbose lock /Users/Daniel/.npm/meteor-rider/0.0.1/package /Users/Daniel/.npm/6a9b1a80-l-npm-meteor-rider-0-0-1-package.lock
+55 silly lockFile 6a9b1a80-l-npm-meteor-rider-0-0-1-package /Users/Daniel/.npm/meteor-rider/0.0.1/package
+56 silly lockFile 6a9b1a80-l-npm-meteor-rider-0-0-1-package /Users/Daniel/.npm/meteor-rider/0.0.1/package
+57 verbose tar unpack /Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+58 silly lockFile 66c850af-l-npm-meteor-rider-0-0-1-package tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package
+59 verbose lock tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package /Users/Daniel/.npm/66c850af-l-npm-meteor-rider-0-0-1-package.lock
+60 silly lockFile a92a0b7a-m-meteor-rider-0-0-1-package-tgz tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+61 verbose lock tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz /Users/Daniel/.npm/a92a0b7a-m-meteor-rider-0-0-1-package-tgz.lock
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm extractEntry .npmignore
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm extractEntry LICENSE
+67 silly gunzTarPerm extractEntry index.js
+68 silly gunzTarPerm extractEntry assets/index.html
+69 silly gunzTarPerm extractEntry assets/js/meteor-rider.js
+70 silly gunzTarPerm extractEntry assets/js/phonegapapp.js
+71 silly gunzTarPerm extractEntry assets/js/zepto.min.js
+72 silly gunzTarPerm extractEntry bin/utils.js
+73 silly lockFile 66c850af-l-npm-meteor-rider-0-0-1-package tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package
+74 silly lockFile 66c850af-l-npm-meteor-rider-0-0-1-package tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package
+75 silly lockFile a92a0b7a-m-meteor-rider-0-0-1-package-tgz tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+76 silly lockFile a92a0b7a-m-meteor-rider-0-0-1-package-tgz tar:///Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz
+77 verbose chmod /Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz 644
+78 verbose chown /Users/Daniel/.npm/meteor-rider/0.0.1/package.tgz [ 501, 20 ]
+79 silly lockFile 3a52ce78- .
+80 silly lockFile 3a52ce78- .
+81 silly publish { name: 'meteor-rider',
+81 silly publish   version: '0.0.1',
+81 silly publish   description: 'Bootstrap the necessary code to run Meteor Apps in Cordova',
+81 silly publish   main: 'lib/meteor-rider',
+81 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+81 silly publish   keywords: [ 'meteor', 'rider', 'meteorrider', 'cordova', 'phonegap' ],
+81 silly publish   author: { name: 'Daniel Ochoa' },
+81 silly publish   license: 'MIT',
+81 silly publish   dependencies: { 'fs-extra': '~0.9.1', xml2js: '~0.4.4' },
+81 silly publish   preferGlobal: true,
+81 silly publish   bin: { meteorRider: './index.js' },
+81 silly publish   readme: 'meteor-rider\n============\n\nBuilt on top of [zeroasterisk/MeteorRider](https://github.com/zeroasterisk/MeteorRider). \n',
+81 silly publish   readmeFilename: 'README.md',
+81 silly publish   _id: 'meteor-rider@0.0.1',
+81 silly publish   dist: { shasum: '9ccb27116a1921c9cd68f427ce6baaab51203087' },
+81 silly publish   _from: '.' }
+82 verbose url raw meteor-rider
+83 verbose url resolving [ 'https://registry.npmjs.org/', './meteor-rider' ]
+84 verbose url resolved https://registry.npmjs.org/meteor-rider
+85 info trying registry request attempt 1 at 20:23:08
+86 http PUT https://registry.npmjs.org/meteor-rider
+87 http 403 https://registry.npmjs.org/meteor-rider
+88 info trying registry request attempt 1 at 20:23:09
+89 http PUT https://registry.npmjs.org/meteor-rider
+90 http 403 https://registry.npmjs.org/meteor-rider
+91 error publish Failed PUT 403
+92 error Error: forbidden cannot modify pre-existing version: 0.0.1
+92 error old={"name":"meteor-rider","version":"0.0.1","description":"Bootstrap the necessary code to run Meteor Apps in Cordova","main":"lib/meteor-rider","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["meteor","rider","meteorrider","cordova","phonegap"],"author":{"name":"Daniel Ochoa"},"license":"MIT","dependencies":{"fs-extra":"~0.9.1","xml2js":"~0.4.4"},"preferGlobal":true,"bin":{"meteorRider":"./index.js"},"_id":"meteor-rider@0.0.1","dist":{"shasum":"ef14f68fa47f8393e7bc64cd394aa1ec2d0e8362","tarball":"http://registry.npmjs.org/meteor-rider/-/meteor-rider-0.0.1.tgz"},"_from":".","_npmVersion":"1.3.24","_npmUser":{"name":"danielo","email":"dannytenaglias@gmail.com"},"maintainers":[{"name":"danielo","email":"dannytenaglias@gmail.com"}]}
+92 error new={"name":"meteor-rider","version":"0.0.1","description":"Bootstrap the necessary code to run Meteor Apps in Cordova","main":"lib/meteor-rider","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["meteor","rider","meteorrider","cordova","phonegap"],"author":{"name":"Daniel Ochoa"},"license":"MIT","dependencies":{"fs-extra":"~0.9.1","xml2js":"~0.4.4"},"preferGlobal":true,"bin":{"meteorRider":"./index.js"},"readme":"meteor-rider\u000a============\u000a\u000aBuilt on top of [zeroasterisk/MeteorRider](https://github.com/zeroasterisk/MeteorRider). \u000a","readmeFilename":"README.md","_id":"meteor-rider@0.0.1","dist":{"shasum":"9ccb27116a1921c9cd68f427ce6baaab51203087","tarball":"http://registry.npmjs.org/meteor-rider/-/meteor-rider-0.0.1.tgz"},"_from":".","_npmVersion":"1.3.24","_npmUser":{"name":"danielo","email":"dannytenaglias@gmail.com"},"maintainers":[{"name":"danielo","email":"dannytenaglias@gmail.com"}]}: meteor-rider
+92 error     at RegClient.<anonymous> (/usr/local/Cellar/node/0.10.25/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:275:14)
+92 error     at Request.self.callback (/usr/local/Cellar/node/0.10.25/lib/node_modules/npm/node_modules/request/request.js:123:22)
+92 error     at Request.EventEmitter.emit (events.js:98:17)
+92 error     at Request.<anonymous> (/usr/local/Cellar/node/0.10.25/lib/node_modules/npm/node_modules/request/request.js:893:14)
+92 error     at Request.EventEmitter.emit (events.js:117:20)
+92 error     at IncomingMessage.<anonymous> (/usr/local/Cellar/node/0.10.25/lib/node_modules/npm/node_modules/request/request.js:844:12)
+92 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+92 error     at _stream_readable.js:920:16
+92 error     at process._tickCallback (node.js:415:13)
+93 error If you need help, you may report this *entire* log,
+93 error including the npm and node versions, at:
+93 error     <http://github.com/isaacs/npm/issues>
+94 error System Darwin 13.2.0
+95 error command "/usr/local/Cellar/node/0.10.25/bin/node" "/usr/local/bin/npm" "publish"
+96 error cwd /Users/Daniel/Documents/meteor/meteor-rider-npm
+97 error node -v v0.10.25
+98 error npm -v 1.3.24
+99 verbose exit [ 1, true ]

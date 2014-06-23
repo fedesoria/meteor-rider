@@ -1,6 +1,6 @@
 {
   "name": "meteor-rider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bootstrap the necessary code to run Meteor Apps in Cordova",
   "main": "lib/meteor-rider",
   "scripts": {
