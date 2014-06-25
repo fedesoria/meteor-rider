@@ -19,42 +19,42 @@ var meteorUrl = '###METEOR_URL###',
 
 function checkIndex () {
   fs.readFile(targetFile, function (err, data) {
-    if (err) return next(null);
-    next(null);
+    if (err) return next();
+    next();
   });
 }
 
 function checkBackupFile () {
   fs.readFile(targetBackup, function (err, data) {
-    if (err) next(null);
+    if (err) return next();
     fs.remove(targetBackup, function (err) {
-      if (err) throw err;
-      next(null);
+      if (err) return next(err);
+      next();
     });
   });
 }
 
 function backupIndex () {
   fs.move(targetFile, targetBackup, function (err) {
-    if (err) throw err;
+    if (err) return next(err);
     console.log('Backing up www/index.html into www/index_old.html ...\n');
-    return next(null);
+    return next();
   });
 }
 
 function copyMeteorIndex () {
   fs.copy(sourceFile, targetFile, function (err) {
-    if (err) throw err;
+    if (err) return next(err);
     console.log('Creating new www/index.html file ...\n');
-    return next(null);
+    return next();
   });
 }
 
 function copyJsFiles () {
   fs.copy(jsDirectory, jsDest, function (err) {
-    if (err) throw err;
+    if (err) return next(err);
     console.log('Creating needed JS files in ww/js/ ...\n');
-    return next(null);
+    return next();
   });
 }
 
@@ -64,43 +64,43 @@ function replaceMeteorUrl () {
   question += '(example: http://todos.meteor.com) > ';
   ask.question(question, function (url) {
     Utils.strReplace(targetFile, meteorUrl, url, function (err) {
-      if (err) throw err;
+      if (err) return next(err);
       ask.close();
       console.log('\n');
-      return next(null);
+      return next();
     });
   });
 }
 
 function replaceCordovaVersion () {
   cp.exec('cordova -v', function (err, stdout, stderr) {
-    if (err) throw err;
+    if (err) return next(err);
     var version = stdout.substr(0, stdout.indexOf('-'));
     version = version.substr(0, version.lastIndexOf('.'));
     Utils.strReplace(targetFile, cordovaVersion, version, function (err) {
-      if (err) throw err;
+      if (err) return next(err);
       console.log('Successfully set Cordova Version (' + version + ') in Meteor Rider ...\n');
-      return next(null);
+      return next();
     });
   });
 }
 
 function checkForConfigXml () {
   fs.readFile(cordovaXML, function (err, data) {
-    if (err) throw err;
+    if (err) return next(err);
     return next(null, data);
   });
 }
 
 function replaceAppVersion (data) {
   parseString(data, function (err, result) {
-    if (err) throw err;
+    if (err) return next(err);
     var appVersion = result.widget.$.version;
     if (!appVersion) return next(new Error('App version is missing from config.xml'));
     Utils.strReplace(targetFile, cordovaAppVersion, appVersion, function (err) {
-      if (err) throw err;
+      if (err) return next(err);
       console.log('Successfully set Cordova App Version (' + appVersion + ') in Meteor Rider ...\n');
-      return next(null);
+      return next();
     });
   });
 }
