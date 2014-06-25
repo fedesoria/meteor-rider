@@ -17,10 +17,24 @@ var meteorUrl = '###METEOR_URL###',
     cordovaVersion = '###CORDOVA_VERSION###',
     cordovaAppVersion = '###CORDOVA_APP_VERSION###';
 
-function backupIndex () {
+function checkIndex () {
   fs.readFile(targetFile, function (err, data) {
     if (err) return next(null);
+    next(null);
   });
+}
+
+function checkBackupFile () {
+  fs.readFile(targetBackup, function (err, data) {
+    if (err) next(null);
+    fs.remove(targetBackup, function (err) {
+      if (err) throw err;
+      next(null);
+    });
+  });
+}
+
+function backupIndex () {
   fs.move(targetFile, targetBackup, function (err) {
     if (err) throw err;
     console.log('Backing up www/index.html into www/index_old.html ...\n');
@@ -96,6 +110,8 @@ function success () {
 }
 
 var tasks = [
+  checkIndex,
+  checkBackupFile,
   backupIndex,
   copyMeteorIndex,
   copyJsFiles,
