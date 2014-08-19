@@ -16,7 +16,7 @@ You need to have a Cordova project created with the
 Usage
 =====
 
-- `npm install meteor-rider`
+- `npm install meteor-rider -g`
 - Go to the root of your cordova project and run `meteorRider`
 - This will copy and set up the necessary files.
 - You will be asked for the url of the Meteor App. Make sure to enter it without
